@@ -1,0 +1,44 @@
+.bold-text {
+  font-weight: bold;
+}
+
+.weatherBox {
+  /* border: 3px solid black; */
+}
+
+body {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color:lightskyblue;
+}
+/* ... */
+
+.daysContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.day {
+  margin-bottom: 10px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  
+}
+
+.weatherBoxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.weatherBox {
+  width: auto;
+  margin: 5px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+}
+
+/* Optional: To center the content inside each day */
+.day h2 {
+  text-align: center;
+}
