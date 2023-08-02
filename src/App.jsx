@@ -4,7 +4,7 @@ import LayoutMap from "./LayoutMap";
 
 function App() {
   const url =
-    "https://api.openweathermap.org/data/2.5/forecast?lat=53.48&lon=02.24&units=metric&appid=fdcf7d03afbc001fee4ba948237bc9c3";
+    `https://api.openweathermap.org/data/2.5/forecast?lat=53.48&lon=02.24&units=metric&appid=fdcf7d03afbc001fee4ba948237bc9c3`;
 
   const [weatherData, setWeatherData] = useState([]);
 
@@ -28,6 +28,7 @@ function App() {
   return (
     <>
       <h1>Manchester Weather</h1>
+      
       {LayoutMap(weatherData)}
     </>
   );
