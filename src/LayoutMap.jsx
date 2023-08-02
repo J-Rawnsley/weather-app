@@ -4,7 +4,6 @@ let tomorrow = 0;
 let rows = [];
 
 const Day = ({ startIndex, endIndex, passedData }) => {
-  console.log("rendering a day");
   return (
     <div className="day">
       <h2>{formatDate(passedData[startIndex].dt).date}</h2>
@@ -24,7 +23,7 @@ const Day = ({ startIndex, endIndex, passedData }) => {
   );
 };
 
-const LayoutMap = (data) => {
+const LayoutMap = ({data}) => {
   if (data.length > 0) {
     let today = data[0].dt_txt[9];
     tomorrow = data.findIndex((item) => item.dt_txt[9] != today);
