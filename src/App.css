@@ -1,15 +1,17 @@
-.bold-text {
-  font-weight: bold;
+#appContainer {
+  background-color: lightskyblue;
+  margin: auto;
+  max-width: 900px;
+  padding: 20px;
 }
 
-.weatherBox {
-  /* border: 3px solid black; */
+.bold-text {
+  font-weight: bold;
 }
 
 body {
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
-  background-color:lightskyblue;
 }
 /* ... */
 
@@ -32,13 +34,47 @@ body {
 }
 
 .weatherBox {
-  width: auto;
+  width: 8px;
+  min-width: 50px;
   margin: 5px;
-  padding: 10px;
+  padding: 5px;
   /* border: 1px solid #ccc; */
+  flex-grow: 2;
 }
 
-/* Optional: To center the content inside each day */
+.weatherBox img {
+  max-width: 80px;
+}
+
 .day h2 {
   text-align: center;
 }
+
+#buttons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+  gap: 10px; /* Space between buttons */
+  justify-items: center;
+}
+
+.locationButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  border: 2px solid lightskyblue;
+  border-radius: 50%;
+  color: lightskyblue;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.locationButton:hover {
+  background-color: lightskyblue;
+  color: #fff;
+  transform: scale(1.05);
+}
+

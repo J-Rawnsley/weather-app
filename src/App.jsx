@@ -35,12 +35,14 @@ function App() {
   console.log(selected);
 
   return (
-    <>
-      <h1>Weather</h1>
-      <ButtonsArray data={locations} setFunction={setSelected} />
+    <div id="appContainer">
+      <h1>How's The Weather?</h1>
+      <div id="buttons-container">
+        <ButtonsArray data={locations} setFunction={setSelected} />
+      </div>
       <h2>Weather forecast for {selected.city}</h2>
       <LayoutMap data={weatherData} />
-    </>
+    </div>
   );
 }
 

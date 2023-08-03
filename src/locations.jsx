@@ -130,9 +130,9 @@ const locationData = [
     lon: "-0.9781",
   },
   {
-    city: "Oldham",
-    lat: "53.5409",
-    lon: "-2.1114",
+    city: "Inverness",
+    lat: "57.4778",
+    lon: "4.2247",
   },
   {
     city: "Middlesbrough",
@@ -153,6 +153,11 @@ const locationData = [
     city: "York",
     lat: "53.9591",
     lon: "-1.0815",
+  },
+  {
+    city: "Aberdeen",
+    lat: "57.1499",
+    lon: "2.0938",
   }
 ];
 
