@@ -12,7 +12,9 @@ function App() {
     lon: "02.24",
   });
 
-  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${selected.lat}&lon=${selected.lon}&units=metric&appid=e1e58e775c7a8102c7403222ae0ca285`;
+  // const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${selected.lat}&lon=${selected.lon}&units=metric&appid=e1e58e775c7a8102c7403222ae0ca285`;
+
+  const url = `https://jrawnsley-weather.netlify.app/.netlify/functions/token-hider?lat=${selected.lat}&lon=${selected.lon}`
 
   const [weatherData, setWeatherData] = useState([]);
 
