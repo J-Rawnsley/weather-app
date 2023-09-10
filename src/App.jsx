@@ -13,9 +13,9 @@ function App() {
   });
 
 
-  // const url = `https://jrawnsley-weather.netlify.app/.netlify/functions/token-hider?lat=${selected.lat}&lon=${selected.lon}`
+  const url = `https://jrawnsley-weather.netlify.app/.netlify/functions/token-hider?lat=${selected.lat}&lon=${selected.lon}`
 
-  const url = `http://localhost:8888/.netlify/functions/token-hider?lat=${selected.lat}&lon=${selected.lon}`
+  // const url = `http://localhost:8888/.netlify/functions/token-hider?lat=${selected.lat}&lon=${selected.lon}`
 
 
   const [weatherData, setWeatherData] = useState([]);
