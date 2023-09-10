@@ -37,6 +37,7 @@ function App() {
   return (
     <div id="appContainer">
       <h1>How's The Weather?</h1>
+      <h2>In Development</h2>
       <div id="buttons-container">
         <ButtonsArray data={locations} setFunction={setSelected} />
       </div>
