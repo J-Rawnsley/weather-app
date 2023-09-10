@@ -15,7 +15,6 @@ function App() {
   // const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${selected.lat}&lon=${selected.lon}&units=metric&appid=e1e58e775c7a8102c7403222ae0ca285`;
 
   const url = `https://jrawnsley-weather.netlify.app/.netlify/functions/token-hider?lat=${selected.lat}&lon=${selected.lon}`
-
   const [weatherData, setWeatherData] = useState([]);
 
   const getData = () => {
@@ -33,8 +32,8 @@ function App() {
 
   useEffect(getData, [selected]);
 
-  console.log(weatherData);
-  console.log(selected);
+  console.log("weather data", weatherData);
+  console.log("selected datapoint", selected);
 
   return (
     <div id="appContainer">

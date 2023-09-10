@@ -24,6 +24,11 @@ const handler = async function (event) {
     return {
       statusCode: 200,
       body: JSON.stringify(data),
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "GET, POST, OPTION",
+      }
     }
   } catch (error) {
     const { data, headers, status, statusText } = error.response
