@@ -1,6 +1,6 @@
-function formatDate(timestamp) {
+function formatDate(timestamp) {  //takes a timestamp provided by the API and converts it to an object with "date" and "time" properties in the required format 
   
-    const days = [
+    const days = [ //can look up to 7 days ahead regardless of starting day
     "Sunday",
     "Monday",
     "Tuesday",
@@ -48,13 +48,11 @@ function formatDate(timestamp) {
     else return `${hour - 12} PM`
   }
 
-  let date = new Date(timestamp * 1000)
-  
+  let date = new Date(timestamp * 1000) //invokes javaScript built in Date() constructor
   let dayOfWeek = days[date.getDay()]
   let dateOfMonth = convertToOrdinal(date.getDate())
   let month = months[date.getMonth()]
   let year = date.getFullYear()
-  
   let time = convertToAMPM(date.getHours())
   
   return {

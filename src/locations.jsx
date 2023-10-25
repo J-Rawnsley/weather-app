@@ -1,4 +1,4 @@
-const locationData = [
+const locationData = [ //location data can be added and removedd here as required
   {
     city: "London",
     lat: "51.5074",
@@ -161,6 +161,6 @@ const locationData = [
   }
 ];
 
-const locations = locationData.sort((a, b) => a.city.localeCompare(b.city));
+const locations = locationData.sort((a, b) => a.city.localeCompare(b.city)); //arrange data in alphabetical order
 
 export default locations;
