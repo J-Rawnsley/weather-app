@@ -1,6 +1,5 @@
 const process = require("process");
 const axios = require("axios");
-const qs = require("qs");
 
 // function to get weather data from server while keeping API key secret
 const handler = async function (event) {
